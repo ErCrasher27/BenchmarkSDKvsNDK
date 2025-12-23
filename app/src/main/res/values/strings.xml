@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BenchmarkSDKvsNDK</string>
+    <string name="title_home">SDK vs NDK: quando il nativo ha senso?</string>
+    <string name="no_ndk_usages_title">Quando NON usare NDK</string>
+    <string name="ndk_usages_title">Quando usare NDK</string>
+    <string name="no_ndk_usages_content">• Algoritmi piccoli → overhead JNI 1–5× il lavoro reale.\n• SDK ha già sort/search ottimizzati.\n• Più complessità, più crash, zero benefici.</string>
+    <string name="go_to_benchmark">Inizia il benchmark</string>
+</resources>

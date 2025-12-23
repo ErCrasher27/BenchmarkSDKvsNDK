@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title_page_margin">10dp</dimen>
+    <dimen name="cardview_margin">10dp</dimen>
+    <dimen name="cardview_padding">10dp</dimen>
+    <dimen name="btn_margin">10dp</dimen>
+</resources>
