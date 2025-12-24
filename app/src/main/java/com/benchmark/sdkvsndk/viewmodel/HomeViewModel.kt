@@ -15,5 +15,10 @@ class HomeViewModel : ViewModel() {
             iconRes = R.drawable.traffic_jam_24px,
             contentRes = R.string.no_ndk_usages_content,
         ),
+        CardData(
+            titleRes = R.string.ndk_usages_title,
+            iconRes = R.drawable.traffic_jam_24px,
+            contentRes = R.string.ndk_usages_content,
+        ),
     )
 }
