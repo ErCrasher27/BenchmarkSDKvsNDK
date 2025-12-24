@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="title_page_margin">10dp</dimen>
-    <dimen name="cardview_margin">10dp</dimen>
-    <dimen name="cardview_padding">10dp</dimen>
-    <dimen name="btn_margin">10dp</dimen>
+    <dimen name="page_margin">16dp</dimen>
+    <dimen name="card_padding">16dp</dimen>
+    <dimen name="button_margin">16dp</dimen>
+
+    <dimen name="card_corner_radius">12dp</dimen>
+    <dimen name="card_elevation">4dp</dimen>
+
+    <dimen name="teaching_icon_size">48dp</dimen>
+    <dimen name="teaching_icon_margin_bottom">8dp</dimen>
+
+    <dimen name="home_title_text_size">22sp</dimen>
+    <dimen name="card_title_text_size">18sp</dimen>
+    <dimen name="card_content_text_size">14sp</dimen>
 </resources>
