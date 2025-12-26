@@ -5,5 +5,14 @@
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.benchmark.sdkvsndk.fragment.Home"
-        android:label="Home" />
+        android:label="Home">
+        <action
+            android:id="@+id/action_homeFragment_to_benchmarkFragment"
+            app:destination="@id/BenchmarkFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/BenchmarkFragment"
+        android:name="com.benchmark.sdkvsndk.fragment.Benchmark"
+        android:label="Benchmark" />
 </navigation>

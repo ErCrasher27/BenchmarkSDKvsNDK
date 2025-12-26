@@ -6,7 +6,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.benchmark.sdkvsndk.R
 import com.benchmark.sdkvsndk.adapter.TeachingCardsAdapter
 import com.benchmark.sdkvsndk.databinding.FragmentHomeBinding
 import com.benchmark.sdkvsndk.viewmodel.HomeViewModel
@@ -27,6 +29,9 @@ class Home : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         setupRecyclerView()
+        binding.goToBenchmark.setOnClickListener {
+            findNavController().navigate(R.id.action_homeFragment_to_benchmarkFragment)
+        }
     }
 
     override fun onDestroyView() {
