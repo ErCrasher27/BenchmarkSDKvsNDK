@@ -10,6 +10,8 @@
     <dimen name="teaching_icon_size">48dp</dimen>
     <dimen name="teaching_icon_margin_bottom">8dp</dimen>
 
+    <dimen name="home_top_padding">32dp</dimen>
+    <dimen name="home_bottom_padding">24dp</dimen>
     <dimen name="home_title_text_size">22sp</dimen>
     <dimen name="card_title_text_size">18sp</dimen>
     <dimen name="card_content_text_size">14sp</dimen>

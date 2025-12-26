@@ -5,6 +5,8 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
         <item name="android:background">@color/bg_dark</item>
+        <item name="android:paddingTop">@dimen/home_top_padding</item>
+        <item name="android:paddingBottom">@dimen/home_bottom_padding</item>
     </style>
 
     <style name="Home.Title">
