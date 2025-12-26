@@ -24,11 +24,11 @@ fun runMergeSortBenchmark(inputSize: InputSize): BenchmarkResult {
     val sdkTimeNs = measureNanoTime {
         kotlinMergeSort(sdkData, 0, sdkData.lastIndex)
     }
+    val sdkTimeMs = sdkTimeNs / 1_000_000
 
     // Measure C++ (NDK) implementation.
     val ndkData = data.copyOf()
     val ndkTimeMs = NativeBenchmark.mergeSort(ndkData)
-    val sdkTimeMs = sdkTimeNs / 1_000_000
 
     return BenchmarkResult(
         algorithm = BenchmarkAlgorithm.MERGE_SORT,
@@ -55,9 +55,9 @@ fun runBinarySearchBenchmark(inputSize: InputSize): BenchmarkResult {
     val sdkTimeNs = measureNanoTime {
         kotlinBinarySearch(sortedData, target)
     }
+    val sdkTimeMs = sdkTimeNs / 1_000_000
 
     val ndkTimeMs = NativeBenchmark.binarySearch(sortedData, target)
-    val sdkTimeMs = sdkTimeNs / 1_000_000
 
     return BenchmarkResult(
         algorithm = BenchmarkAlgorithm.BINARY_SEARCH,
