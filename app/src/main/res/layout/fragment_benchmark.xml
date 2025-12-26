@@ -1,13 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".fragment.Benchmark">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Hello" />
+    <data>
 
-</FrameLayout>
+        <import type="com.benchmark.sdkvsndk.benchmark.BenchmarkAlgorithm" />
+
+        <variable
+            name="viewModel"
+            type="com.benchmark.sdkvsndk.viewmodel.BenchmarkViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout style="@style/Benchmark">
+
+        <TextView
+            android:id="@+id/benchmark_title"
+            style="@style/Benchmark.Title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/algorithm_spinner"
+            style="@style/Benchmark.Spinner"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/benchmark_title" />
+
+        <Spinner
+            android:id="@+id/input_size_spinner"
+            style="@style/Benchmark.Spinner"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/algorithm_spinner" />
+
+        <Button
+            android:id="@+id/run_benchmark_button"
+            style="@style/Benchmark.PrimaryButton"
+            android:text="@string/benchmark_run_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/input_size_spinner" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/result_card"
+            style="@style/Benchmark.ResultCard"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/run_benchmark_button">
+
+            <LinearLayout style="@style/Benchmark.ResultContainer">
+
+                <TextView
+                    style="@style/Benchmark.ResultLabel"
+                    android:text="@string/benchmark_last_run" />
+
+                <TextView
+                    android:id="@+id/sdk_time_text"
+                    style="@style/Benchmark.ResultText" />
+
+                <TextView
+                    android:id="@+id/ndk_time_text"
+                    style="@style/Benchmark.ResultText" />
+
+                <TextView
+                    android:id="@+id/speedup_text"
+                    style="@style/Benchmark.ResultText" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

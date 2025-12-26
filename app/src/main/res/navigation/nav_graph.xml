@@ -4,7 +4,7 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.benchmark.sdkvsndk.fragment.Home"
+        android:name="com.benchmark.sdkvsndk.fragment.HomeFragment"
         android:label="Home">
         <action
             android:id="@+id/action_homeFragment_to_benchmarkFragment"
@@ -13,6 +13,6 @@
 
     <fragment
         android:id="@+id/BenchmarkFragment"
-        android:name="com.benchmark.sdkvsndk.fragment.Benchmark"
+        android:name="com.benchmark.sdkvsndk.fragment.BenchmarkFragment"
         android:label="Benchmark" />
 </navigation>

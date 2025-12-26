@@ -13,17 +13,4 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
     }
-
-    /**
-     * A native method that is implemented by the 'sdkvsndk' native library,
-     * which is packaged with this application.
-     */
-    @Suppress("unused")
-    external fun stringFromJNI(): String
-
-    companion object {
-        init {
-            System.loadLibrary("sdkvsndk")
-        }
-    }
 }

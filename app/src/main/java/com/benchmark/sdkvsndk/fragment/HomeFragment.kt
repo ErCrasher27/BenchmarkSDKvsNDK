@@ -13,7 +13,7 @@ import com.benchmark.sdkvsndk.adapter.TeachingCardsAdapter
 import com.benchmark.sdkvsndk.databinding.FragmentHomeBinding
 import com.benchmark.sdkvsndk.viewmodel.HomeViewModel
 
-class Home : Fragment() {
+class HomeFragment : Fragment() {
 
     private var _binding: FragmentHomeBinding? = null
     private val binding get() = _binding!!

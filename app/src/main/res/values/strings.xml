@@ -6,4 +6,20 @@
     <string name="no_ndk_usages_content">• Algoritmi piccoli → overhead JNI 1–5× il lavoro reale.\n• SDK ha già sort/search ottimizzati.\n• Più complessità, più crash, zero benefici.</string>
     <string name="ndk_usages_content">• Dati grandi (10k+ elementi) o grafi grossi.\n• Hot path critici (fisica, routing, media).\n• Riutilizzo librerie C/C++ esistenti.</string>
     <string name="go_to_benchmark">Inizia il benchmark</string>
+
+    <string name="benchmark_title">Benchmark SDK vs NDK</string>
+    <string name="benchmark_run_button">Esegui benchmark</string>
+    <string name="benchmark_last_run">Ultimo risultato</string>
+
+    <string name="input_size_1k">1K elementi</string>
+    <string name="input_size_10k">10K elementi</string>
+    <string name="input_size_100k">100K elementi</string>
+
+    <string name="algorithm_merge_sort">Merge sort</string>
+    <string name="algorithm_binary_search">Ricerca binaria</string>
+
+    <string name="benchmark_sdk_time">SDK: %1$d ms</string>
+    <string name="benchmark_ndk_time">NDK: %1$d ms</string>
+    <string name="benchmark_speedup">Speedup SDK/NDK: %1$s×</string>
+
 </resources>

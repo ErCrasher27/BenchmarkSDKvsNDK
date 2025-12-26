@@ -86,4 +86,70 @@
         <item name="android:lineSpacingExtra">2dp</item>
     </style>
 
+    <style name="Benchmark">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/bg_dark</item>
+        <item name="android:paddingTop">@dimen/home_top_padding</item>
+        <item name="android:paddingBottom">@dimen/home_bottom_padding</item>
+        <item name="android:paddingStart">@dimen/page_margin</item>
+        <item name="android:paddingEnd">@dimen/page_margin</item>
+    </style>
+
+    <style name="Benchmark.Title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/benchmark_title</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">@dimen/home_title_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginBottom">@dimen/page_margin</item>
+    </style>
+
+    <style name="Benchmark.Spinner">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/page_margin</item>
+        <item name="android:backgroundTint">@color/card_dark</item>
+        <item name="android:spinnerMode">dropdown</item>
+    </style>
+
+    <style name="Benchmark.PrimaryButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/page_margin</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:backgroundTint">@color/ndk_color</item>
+    </style>
+
+    <style name="Benchmark.ResultCard">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_marginTop">@dimen/page_margin</item>
+        <item name="android:layout_marginBottom">@dimen/page_margin</item>
+        <item name="cardBackgroundColor">@color/card_dark</item>
+        <item name="cardCornerRadius">@dimen/card_corner_radius</item>
+        <item name="cardElevation">@dimen/card_elevation</item>
+    </style>
+
+    <style name="Benchmark.ResultContainer">
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">@dimen/card_padding</item>
+    </style>
+
+    <style name="Benchmark.ResultLabel">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginBottom">@dimen/page_margin</item>
+    </style>
+
+    <style name="Benchmark.ResultText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:layout_marginBottom">4dp</item>
+    </style>
+
 </resources>
