@@ -42,13 +42,22 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/input_size_spinner" />
 
+        <Button
+            android:id="@+id/view_statistics_button"
+            style="@style/Benchmark.PrimaryButton"
+            android:enabled="false"
+            android:text="@string/benchmark_button_view_stats"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/run_benchmark_button" />
+
         <androidx.cardview.widget.CardView
             android:id="@+id/result_card"
             style="@style/Benchmark.ResultCard"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/run_benchmark_button">
+            app:layout_constraintTop_toBottomOf="@id/view_statistics_button">
 
             <LinearLayout style="@style/Benchmark.ResultContainer">
 

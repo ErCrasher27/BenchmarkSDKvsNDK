@@ -1,6 +1,6 @@
 <resources>
 
-    <!-- Home -->
+    <!-- Home screen -->
 
     <style name="Home">
         <item name="android:layout_width">match_parent</item>
@@ -157,6 +157,95 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textColor">@color/text_secondary</item>
         <item name="android:layout_marginBottom">@dimen/benchmark_result_item_spacing</item>
+    </style>
+
+    <!-- Statistics screen -->
+
+    <style name="Statistics">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/bg_dark</item>
+        <item name="android:padding">@dimen/page_margin</item>
+    </style>
+
+    <style name="Statistics.Content">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="Statistics.Title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/statistics_section_spacing</item>
+        <item name="android:text">@string/statistics_title</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">@dimen/statistics_title_text_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Statistics.Card">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/page_margin</item>
+        <item name="cardBackgroundColor">@color/card_dark</item>
+        <item name="cardCornerRadius">@dimen/card_corner_radius</item>
+        <item name="cardElevation">@dimen/card_elevation</item>
+    </style>
+
+    <style name="Statistics.CardContent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">@dimen/card_padding</item>
+    </style>
+
+    <style name="Statistics.CardContent.Centered">
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Statistics.Subtitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/button_margin</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">@dimen/card_title_text_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Statistics.Text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/benchmark_result_item_spacing</item>
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:textSize">@dimen/card_content_text_size</item>
+    </style>
+
+    <style name="Statistics.SpeedupValue">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/ndk_color</item>
+        <item name="android:textSize">@dimen/statistics_speedup_text_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Statistics.ProgressBar" parent="Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/statistics_progress_height</item>
+        <item name="android:layout_marginBottom">@dimen/page_margin</item>
+        <item name="android:max">100</item>
+    </style>
+
+    <style name="Statistics.Button" parent="Benchmark.PrimaryButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/button_margin</item>
+    </style>
+
+    <style name="Statistics.Button.Secondary" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
     </style>
 
 </resources>

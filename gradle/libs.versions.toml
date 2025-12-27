@@ -32,4 +32,6 @@ androidx-fragment-ktx = { group = "androidx.fragment", name = "fragment-ktx", ve
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+navigation-safe-args = { id = "androidx.navigation.safeargs.kotlin", version.ref = "navigationFragmentKtx" }
+kotlin-parcelize = { id = "org.jetbrains.kotlin.plugin.parcelize", version.ref = "kotlin" }
 

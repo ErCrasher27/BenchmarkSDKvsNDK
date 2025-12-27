@@ -1,7 +1,7 @@
 package com.benchmark.sdkvsndk.benchmark
 
-import com.benchmark.sdkvsndk.viewmodel.BenchmarkViewModel.BenchmarkResult
-import com.benchmark.sdkvsndk.viewmodel.BenchmarkViewModel.InputSize
+import com.benchmark.sdkvsndk.model.BenchmarkResult
+import com.benchmark.sdkvsndk.model.InputSize
 import kotlin.random.Random
 import kotlin.system.measureNanoTime
 

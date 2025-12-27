@@ -2,12 +2,9 @@ package com.benchmark.sdkvsndk.viewmodel
 
 import androidx.lifecycle.ViewModel
 import com.benchmark.sdkvsndk.R
+import com.benchmark.sdkvsndk.model.CardData
 
 class HomeViewModel : ViewModel() {
-
-    data class CardData(
-        val titleRes: Int, val iconRes: Int, val contentRes: Int
-    )
 
     val cards = listOf(
         CardData(

@@ -13,4 +13,8 @@
     <dimen name="page_margin">16dp</dimen>
     <dimen name="teaching_icon_margin_bottom">8dp</dimen>
     <dimen name="teaching_icon_size">48dp</dimen>
+    <dimen name="statistics_title_text_size">24sp</dimen>
+    <dimen name="statistics_speedup_text_size">28sp</dimen>
+    <dimen name="statistics_section_spacing">24dp</dimen>
+    <dimen name="statistics_progress_height">8dp</dimen>
 </resources>

@@ -8,11 +8,24 @@
         android:label="Home">
         <action
             android:id="@+id/action_homeFragment_to_benchmarkFragment"
-            app:destination="@id/BenchmarkFragment" />
+            app:destination="@id/benchmarkFragment" />
     </fragment>
 
     <fragment
-        android:id="@+id/BenchmarkFragment"
+        android:id="@+id/benchmarkFragment"
         android:name="com.benchmark.sdkvsndk.fragment.BenchmarkFragment"
-        android:label="Benchmark" />
+        android:label="Benchmark">
+        <action
+            android:id="@+id/action_benchmarkFragment_to_statisticsFragment"
+            app:destination="@id/statisticsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/statisticsFragment"
+        android:name="com.benchmark.sdkvsndk.fragment.StatisticsFragment"
+        android:label="Statistics">
+        <argument
+            android:name="benchmarkResults"
+            app:argType="com.benchmark.sdkvsndk.model.BenchmarkResults" />
+    </fragment>
 </navigation>

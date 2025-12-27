@@ -8,6 +8,7 @@ import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import com.benchmark.sdkvsndk.R
 import com.benchmark.sdkvsndk.benchmark.BenchmarkAlgorithm
 import com.benchmark.sdkvsndk.databinding.FragmentBenchmarkBinding
@@ -17,7 +18,6 @@ class BenchmarkFragment : Fragment() {
 
     private var _binding: FragmentBenchmarkBinding? = null
     private val binding get() = _binding!!
-
     private val viewModel: BenchmarkViewModel by viewModels()
 
     override fun onCreateView(
@@ -34,11 +34,26 @@ class BenchmarkFragment : Fragment() {
 
         setupAlgorithmSpinner()
         setupInputSizeSpinner()
+        setupObservers()
+        setupButtons()
+    }
 
+    private fun setupButtons() {
         binding.runBenchmarkButton.setOnClickListener {
             viewModel.runBenchmark()
         }
 
+        binding.viewStatisticsButton.setOnClickListener {
+            val results = viewModel.getBenchmarkResults()
+            if (results != null) {
+                val action =
+                    BenchmarkFragmentDirections.actionBenchmarkFragmentToStatisticsFragment(results)
+                findNavController().navigate(action)
+            }
+        }
+    }
+
+    private fun setupObservers() {
         viewModel.lastResult.observe(viewLifecycleOwner) { result ->
             result ?: return@observe
 
@@ -47,6 +62,10 @@ class BenchmarkFragment : Fragment() {
             binding.speedupText.text = getString(
                 R.string.benchmark_speedup, String.format("%.2f", result.speedup)
             )
+        }
+
+        viewModel.canViewStatistics.observe(viewLifecycleOwner) { canView ->
+            binding.viewStatisticsButton.isEnabled = canView
         }
     }
 

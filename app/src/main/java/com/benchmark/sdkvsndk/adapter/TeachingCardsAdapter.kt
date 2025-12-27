@@ -4,9 +4,9 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.benchmark.sdkvsndk.databinding.ContentTeachingCardsBinding
-import com.benchmark.sdkvsndk.viewmodel.HomeViewModel
+import com.benchmark.sdkvsndk.model.CardData
 
-class TeachingCardsAdapter(private val cards: List<HomeViewModel.CardData>) :
+class TeachingCardsAdapter(private val cards: List<CardData>) :
     RecyclerView.Adapter<TeachingCardsAdapter.ViewHolder>() {
 
     class ViewHolder(val binding: ContentTeachingCardsBinding) :

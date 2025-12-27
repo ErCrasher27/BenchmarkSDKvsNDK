@@ -2,7 +2,7 @@
     <!-- App -->
     <string name="app_name">Benchmark SDK vs NDK</string>
 
-    <!-- Home -->
+    <!-- Home screen -->
     <string name="title_home">SDK vs NDK: quando il nativo ha senso?</string>
     <string name="go_to_benchmark">Inizia il benchmark</string>
 
@@ -37,4 +37,18 @@
     <!-- Algorithms -->
     <string name="algorithm_merge_sort">Merge sort</string>
     <string name="algorithm_binary_search">Ricerca binaria</string>
+
+    <!-- Statistics screen -->
+    <string name="statistics_title">Risultati Benchmark</string>
+    <string name="statistics_input_size">Input Size: %d elementi</string>
+    <string name="statistics_iterations">Iterazioni: %d</string>
+    <string name="statistics_speedup_title">Speedup</string>
+    <string name="statistics_avg_times_title">Tempi Medi</string>
+    <string name="statistics_sdk_average">SDK: %.2f ms</string>
+    <string name="statistics_ndk_average">NDK: %.2f ms</string>
+    <string name="statistics_sdk_wins">SDK Vittorie</string>
+    <string name="statistics_ndk_wins">NDK Vittorie</string>
+    <string name="statistics_button_run_again">Esegui Nuovo Benchmark</string>
+    <string name="statistics_button_back_home">Torna alla Home</string>
+    <string name="benchmark_button_view_stats">Visualizza Statistiche</string>
 </resources>

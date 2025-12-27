@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView style="@style/Statistics">
+
+        <LinearLayout style="@style/Statistics.Content">
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/Statistics.Title" />
+
+            <androidx.cardview.widget.CardView style="@style/Statistics.Card">
+
+                <LinearLayout style="@style/Statistics.CardContent">
+
+                    <TextView
+                        android:id="@+id/tv_input_size"
+                        style="@style/Statistics.Text" />
+
+                    <TextView
+                        android:id="@+id/tv_iterations"
+                        style="@style/Statistics.Text" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView style="@style/Statistics.Card">
+
+                <LinearLayout style="@style/Statistics.CardContent.Centered">
+
+                    <TextView
+                        style="@style/Statistics.Subtitle"
+                        android:text="@string/statistics_speedup_title" />
+
+                    <TextView
+                        android:id="@+id/tv_speedup"
+                        style="@style/Statistics.SpeedupValue" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView style="@style/Statistics.Card">
+
+                <LinearLayout style="@style/Statistics.CardContent">
+
+                    <TextView
+                        android:id="@+id/tv_win_percentage"
+                        style="@style/Statistics.Subtitle" />
+
+                    <TextView
+                        style="@style/Statistics.Text"
+                        android:text="@string/statistics_sdk_wins" />
+
+                    <ProgressBar
+                        android:id="@+id/progress_sdk_wins"
+                        style="@style/Statistics.ProgressBar" />
+
+                    <TextView
+                        style="@style/Statistics.Text"
+                        android:text="@string/statistics_ndk_wins" />
+
+                    <ProgressBar
+                        android:id="@+id/progress_ndk_wins"
+                        style="@style/Statistics.ProgressBar" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                style="@style/Statistics.Card"
+                android:layout_marginBottom="@dimen/statistics_section_spacing">
+
+                <LinearLayout style="@style/Statistics.CardContent">
+
+                    <TextView
+                        style="@style/Statistics.Subtitle"
+                        android:text="@string/statistics_avg_times_title" />
+
+                    <TextView
+                        android:id="@+id/tv_sdk_average"
+                        style="@style/Statistics.Text" />
+
+                    <TextView
+                        android:id="@+id/tv_ndk_average"
+                        style="@style/Statistics.Text" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/btn_run_again"
+                style="@style/Statistics.Button"
+                android:text="@string/statistics_button_run_again" />
+
+            <Button
+                android:id="@+id/btn_back_home"
+                style="@style/Statistics.Button.Secondary"
+                android:text="@string/statistics_button_back_home" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</layout>
