@@ -38,6 +38,7 @@ class StatisticsFragment : Fragment() {
         val results = viewModel.results ?: return
 
         binding.apply {
+            tvAlgorithm.text = getString(R.string.statistics_algorithm, results.algorithm)
             tvInputSize.text = getString(R.string.statistics_input_size, results.inputSize)
             tvIterations.text = getString(R.string.statistics_iterations, results.iterations)
             tvSpeedup.text = viewModel.getSpeedupLabel()

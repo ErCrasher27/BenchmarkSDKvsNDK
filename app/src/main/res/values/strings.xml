@@ -47,8 +47,11 @@
     <string name="statistics_iterations">Iterazioni: %d</string>
     <string name="statistics_speedup_title">Speedup</string>
     <string name="statistics_run_config_label">
-    Input size and runs
+    Algorithm, input size and runs
 </string>
+    <string name="statistics_algorithm">Algorithm: %s</string>
+
+
     <string name="statistics_avg_times_title">Tempi Medi</string>
     <string name="statistics_sdk_average">SDK: %.2f ms</string>
     <string name="statistics_ndk_average">NDK: %.2f ms</string>

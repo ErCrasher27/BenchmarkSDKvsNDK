@@ -19,6 +19,10 @@
                         android:text="@string/statistics_run_config_label" />
 
                     <TextView
+                        android:id="@+id/tv_algorithm"
+                        style="@style/ResultText" />
+
+                    <TextView
                         android:id="@+id/tv_input_size"
                         style="@style/ResultText" />
 

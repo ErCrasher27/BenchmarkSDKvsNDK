@@ -86,11 +86,13 @@ class BenchmarkViewModel : ViewModel() {
 
     fun getBenchmarkResults(): BenchmarkResults? {
         if (iterations < 10) return null
+        val algorithm = _selectedAlgorithm.value ?: return null
         val size = _selectedInputSize.value ?: return null
 
         return BenchmarkResults(
             sdkTimes = sdkTimes.toList(),
             ndkTimes = ndkTimes.toList(),
+            algorithm = algorithm,
             inputSize = size.n,
             iterations = iterations
         )
