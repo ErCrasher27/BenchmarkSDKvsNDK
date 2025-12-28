@@ -27,7 +27,8 @@ class BenchmarkViewModel : ViewModel() {
         // BENCHMARK-EXTENSION-POINT (optional)
         InputSize(R.string.benchmark_input_1k, 1_000),
         InputSize(R.string.benchmark_input_10k, 10_000),
-        InputSize(R.string.benchmark_input_100k, 100_000)
+        InputSize(R.string.benchmark_input_100k, 100_000),
+        InputSize(R.string.benchmark_input_1kk, 1_000_000)
     )
     val inputSizes: List<InputSize> = _inputSizes
 

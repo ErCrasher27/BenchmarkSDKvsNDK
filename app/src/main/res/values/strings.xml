@@ -36,10 +36,11 @@
     </string>
 
     <!-- Input sizes -->
-    <!-- BENCHMARK-EXTENSION-POINT -->
+    <!-- BENCHMARK-EXTENSION-POINT (optional) -->
     <string name="benchmark_input_1k">1K elements</string>
     <string name="benchmark_input_10k">10K elements</string>
     <string name="benchmark_input_100k">100K elements</string>
+    <string name="benchmark_input_1kk">1kK elements</string>
 
     <!-- Algorithms -->
     <!-- BENCHMARK-EXTENSION-POINT -->
