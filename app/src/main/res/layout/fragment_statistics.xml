@@ -1,91 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <ScrollView style="@style/Statistics">
+    <ScrollView style="@style/Screen">
 
-        <LinearLayout style="@style/Statistics.Content">
+        <LinearLayout style="@style/LL">
 
             <TextView
                 android:id="@+id/tv_title"
-                style="@style/Statistics.Title" />
+                style="@style/Title"
+                android:text="@string/statistics_title" />
 
-            <androidx.cardview.widget.CardView style="@style/Statistics.Card">
+            <androidx.cardview.widget.CardView style="@style/Card">
 
-                <LinearLayout style="@style/Statistics.CardContent">
+                <LinearLayout style="@style/LL">
+
+                    <TextView
+                        style="@style/ResultLabel"
+                        android:text="@string/statistics_run_config_label" />
 
                     <TextView
                         android:id="@+id/tv_input_size"
-                        style="@style/Statistics.Text" />
+                        style="@style/ResultText" />
 
                     <TextView
                         android:id="@+id/tv_iterations"
-                        style="@style/Statistics.Text" />
+                        style="@style/ResultText" />
 
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
 
-            <androidx.cardview.widget.CardView style="@style/Statistics.Card">
+            <androidx.cardview.widget.CardView style="@style/Card">
 
-                <LinearLayout style="@style/Statistics.CardContent.Centered">
+                <LinearLayout style="@style/LL">
 
                     <TextView
-                        style="@style/Statistics.Subtitle"
+                        style="@style/ResultLabel"
                         android:text="@string/statistics_speedup_title" />
 
                     <TextView
                         android:id="@+id/tv_speedup"
-                        style="@style/Statistics.SpeedupValue" />
+                        style="@style/ResultText" />
 
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
 
-            <androidx.cardview.widget.CardView style="@style/Statistics.Card">
+            <androidx.cardview.widget.CardView style="@style/Card">
 
-                <LinearLayout style="@style/Statistics.CardContent">
-
-                    <TextView
-                        android:id="@+id/tv_win_percentage"
-                        style="@style/Statistics.Subtitle" />
+                <LinearLayout style="@style/LL">
 
                     <TextView
-                        style="@style/Statistics.Text"
+                        style="@style/ResultLabel"
                         android:text="@string/statistics_sdk_wins" />
 
                     <ProgressBar
                         android:id="@+id/progress_sdk_wins"
-                        style="@style/Statistics.ProgressBar" />
+                        style="@style/ProgressBar" />
 
                     <TextView
-                        style="@style/Statistics.Text"
+                        style="@style/ResultLabel"
                         android:text="@string/statistics_ndk_wins" />
 
                     <ProgressBar
                         android:id="@+id/progress_ndk_wins"
-                        style="@style/Statistics.ProgressBar" />
+                        style="@style/ProgressBar" />
+
+                    <TextView
+                        android:id="@+id/tv_win_percentage"
+                        style="@style/ResultText" />
 
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
 
-            <androidx.cardview.widget.CardView
-                style="@style/Statistics.Card"
-                android:layout_marginBottom="@dimen/statistics_section_spacing">
+            <androidx.cardview.widget.CardView style="@style/Card">
 
-                <LinearLayout style="@style/Statistics.CardContent">
+                <LinearLayout style="@style/LL">
 
                     <TextView
-                        style="@style/Statistics.Subtitle"
+                        style="@style/ResultLabel"
                         android:text="@string/statistics_avg_times_title" />
 
                     <TextView
                         android:id="@+id/tv_sdk_average"
-                        style="@style/Statistics.Text" />
+                        style="@style/ResultText" />
 
                     <TextView
                         android:id="@+id/tv_ndk_average"
-                        style="@style/Statistics.Text" />
+                        style="@style/ResultText" />
 
                 </LinearLayout>
 
@@ -93,12 +96,12 @@
 
             <Button
                 android:id="@+id/btn_run_again"
-                style="@style/Statistics.Button"
+                style="@style/PrimaryButton"
                 android:text="@string/statistics_button_run_again" />
 
             <Button
                 android:id="@+id/btn_back_home"
-                style="@style/Statistics.Button.Secondary"
+                style="@style/PrimaryButton"
                 android:text="@string/statistics_button_back_home" />
 
         </LinearLayout>
