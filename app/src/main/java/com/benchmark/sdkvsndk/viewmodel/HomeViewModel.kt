@@ -9,14 +9,21 @@ class HomeViewModel : ViewModel() {
     val cards = listOf(
         // TEACHING-CARD-EXTENSION-POINT
         CardData(
-            titleRes = R.string.teaching_when_not_use_ndk_title,
-            iconRes = R.drawable.traffic_jam_24px,
-            contentRes = R.string.teaching_when_not_use_ndk_content,
-        ),
-        CardData(
-            titleRes = R.string.teaching_when_use_ndk_title,
-            iconRes = R.drawable.traffic_jam_24px,
-            contentRes = R.string.teaching_when_use_ndk_content,
-        ),
+            titleRes = R.string.teaching_shocking_truth_title,
+            iconRes = R.drawable.bolt,
+            contentRes = R.string.teaching_shocking_truth_content,
+        ), CardData(
+            titleRes = R.string.teaching_binary_search_title,
+            iconRes = R.drawable.timer_off,
+            contentRes = R.string.teaching_binary_search_content,
+        ), CardData(
+            titleRes = R.string.teaching_when_native_fails_title,
+            iconRes = R.drawable.broken_image,
+            contentRes = R.string.teaching_when_native_fails_content,
+        ), CardData(
+            titleRes = R.string.teaching_what_wins_title,
+            iconRes = R.drawable.psychology,
+            contentRes = R.string.teaching_what_wins_content,
+        )
     )
 }

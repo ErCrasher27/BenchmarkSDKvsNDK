@@ -9,18 +9,32 @@
 
     <!-- Teaching cards -->
     <!-- TEACHING-CARD-EXTENSION-POINT -->
-    <string name="teaching_when_not_use_ndk_title">When NOT to use NDK</string>
-    <string name="teaching_when_not_use_ndk_content">
-        • Small workloads → JNI overhead is 1–5× the actual work.\n
-        • SDK already has optimized sort/search.\n
-        • More complexity, more crashes, no benefit.
+    <string name="teaching_shocking_truth_title">The "1 Million" Myth</string>
+    <string name="teaching_shocking_truth_content">
+        • Even with 1M+ elements, SDK (Kotlin) can beat NDK.\n
+        • Why? Moving data across JNI isn\'t free. Copying a massive array to C++ takes time.\n
+        • If the math isn\'t super heavy, the copy cost > the speedup.
     </string>
 
-    <string name="teaching_when_use_ndk_title">When to use NDK</string>
-    <string name="teaching_when_use_ndk_content">
-        • Large data sets (10k+ elements) or big graphs.\n
-        • Hot paths (physics, routing, media).\n
-        • Reuse existing C/C++ libraries.
+    <string name="teaching_binary_search_title">O(log n) vs JNI Overhead</string>
+    <string name="teaching_binary_search_content">
+        • Binary Search is too fast (microseconds).\n
+        • The JNI "tax" to switch context costs more than the search itself.\n
+        • Result: 0ms vs 0ms, but SDK is technically cleaner and safer.
+    </string>
+
+    <string name="teaching_when_native_fails_title">When Native Fails (Real Data)</string>
+    <string name="teaching_when_native_fails_content">
+        • Memory-bound tasks (sorting, searching) often lose in NDK.\n
+        • The Android Runtime (ART) optimizes Kotlin loops incredibly well.\n
+        • Use NDK for computation (math), not just moving data.
+    </string>
+
+    <string name="teaching_what_wins_title">So... What wins?</string>
+    <string name="teaching_what_wins_content">
+        • You need HIGH complexity (O(n³) or more) with LOW data transfer.\n
+        • Example: Image processing, crypto, physics simulations.\n
+        • Don\'t use NDK just to sort a list. It\'s a trap.
     </string>
 
     <!-- Benchmark screen -->
