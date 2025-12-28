@@ -1,7 +1,7 @@
 <resources>
 
     <style name="Theme.BenchmarkSDKvsNDK" parent="Theme.Material3.Light.NoActionBar">
-        <item name="android:windowBackground">@color/white</item>
+        <item name="android:windowBackground">@color/bg_dark</item>
 
         <item name="colorPrimary">@color/sdk_color</item>
         <item name="colorOnPrimary">@color/white</item>
@@ -9,10 +9,10 @@
         <item name="colorSecondary">@color/ndk_color</item>
         <item name="colorOnSecondary">@color/black</item>
 
-        <item name="android:statusBarColor">@color/sdk_color</item>
-        <item name="android:navigationBarColor">@color/white</item>
+        <item name="android:statusBarColor">@color/bg_dark</item>
+        <item name="android:navigationBarColor">@color/bg_dark</item>
 
-        <item name="android:textColor">@color/black</item>
+        <item name="android:textColor">@color/text_primary</item>
 
         <item name="materialButtonStyle">@style/Widget.Benchmark.Button.Primary</item>
     </style>
