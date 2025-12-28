@@ -15,18 +15,18 @@ class StatisticsViewModel : ViewModel() {
     fun getSpeedupLabel(): String {
         val speedup = results?.speedup ?: return "N/A"
         return if (speedup > 1.0) {
-            "NDK ${String.format("%.2f", speedup)}x più veloce"
+            "NDK ${String.format("%.2f", speedup)}x faster"
         } else {
-            "SDK ${String.format("%.2f", 1.0 / speedup)}x più veloce"
+            "SDK ${String.format("%.2f", 1.0 / speedup)}x faster"
         }
     }
 
     fun getWinnerLabel(): String {
         val results = results ?: return "N/A"
         return if (results.ndkWinPercentage > results.sdkWinPercentage) {
-            "NDK vince ${results.ndkWinPercentage}% delle volte"
+            "NDK wins ${results.ndkWinPercentage}% of the time"
         } else {
-            "SDK vince ${results.sdkWinPercentage}% delle volte"
+            "SDK wins ${results.sdkWinPercentage}% of the time"
         }
     }
 }

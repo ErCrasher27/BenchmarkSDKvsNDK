@@ -23,9 +23,9 @@ class BenchmarkViewModel : ViewModel() {
     val algorithms: List<BenchmarkAlgorithm> = _algorithms
 
     private val _inputSizes = listOf(
-        InputSize(R.string.input_size_1k, 1_000),
-        InputSize(R.string.input_size_10k, 10_000),
-        InputSize(R.string.input_size_100k, 100_000)
+        InputSize(R.string.benchmark_input_1k, 1_000),
+        InputSize(R.string.benchmark_input_10k, 10_000),
+        InputSize(R.string.benchmark_input_100k, 100_000)
     )
     val inputSizes: List<InputSize> = _inputSizes
 

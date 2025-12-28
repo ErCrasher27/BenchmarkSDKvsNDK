@@ -3,61 +3,61 @@
     <string name="app_name">Benchmark SDK vs NDK</string>
 
     <!-- Home screen -->
-    <string name="title_home">SDK vs NDK: quando il nativo ha senso?</string>
-    <string name="go_to_benchmark">Inizia il benchmark</string>
+    <string name="home_title">SDK vs NDK: when does native make sense?</string>
+    <string name="home_start_benchmark">Start benchmark</string>
+    <string name="home_swipe_hint">Swipe to read more →</string>
 
     <!-- Teaching cards -->
-    <string name="card_when_not_use_ndk_title">Quando NON usare NDK</string>
-    <string name="card_when_not_use_ndk_content">
-        • Algoritmi piccoli → overhead JNI 1–5× il lavoro reale.\n
-        • SDK ha già sort/search ottimizzati.\n
-        • Più complessità, più crash, zero benefici.
+    <string name="teaching_when_not_use_ndk_title">When NOT to use NDK</string>
+    <string name="teaching_when_not_use_ndk_content">
+        • Small workloads → JNI overhead is 1–5× the actual work.\n
+        • SDK already has optimized sort/search.\n
+        • More complexity, more crashes, no benefit.
     </string>
 
-    <string name="card_when_use_ndk_title">Quando usare NDK</string>
-    <string name="card_when_use_ndk_content">
-        • Dati grandi (10k+ elementi) o grafi grossi.\n
-        • Hot path critici (fisica, routing, media).\n
-        • Riutilizzo librerie C/C++ esistenti.
+    <string name="teaching_when_use_ndk_title">When to use NDK</string>
+    <string name="teaching_when_use_ndk_content">
+        • Large data sets (10k+ elements) or big graphs.\n
+        • Hot paths (physics, routing, media).\n
+        • Reuse existing C/C++ libraries.
     </string>
 
     <!-- Benchmark screen -->
     <string name="benchmark_title">Benchmark SDK vs NDK</string>
-    <string name="benchmark_run_button">Esegui benchmark</string>
-    <string name="benchmark_last_run">Ultimo risultato</string>
+    <string name="benchmark_run_button">Run benchmark</string>
+    <string name="benchmark_last_run">Last result</string>
     <string name="benchmark_sdk_time">SDK: %1$d ms</string>
     <string name="benchmark_ndk_time">NDK: %1$d ms</string>
     <string name="benchmark_speedup">Speedup SDK/NDK: %1$s×</string>
+    <string name="benchmark_button_view_stats">View statistics</string>
     <string name="benchmark_stats_require_runs">
-    To view statistics, run at least 10 benchmarks with the same algorithm and input size.
-</string>
+        To view statistics, run at least 10 benchmarks with the same algorithm and input size.
+    </string>
 
     <!-- Input sizes -->
-    <string name="input_size_1k">1K elementi</string>
-    <string name="input_size_10k">10K elementi</string>
-    <string name="input_size_100k">100K elementi</string>
+    <string name="benchmark_input_1k">1K elements</string>
+    <string name="benchmark_input_10k">10K elements</string>
+    <string name="benchmark_input_100k">100K elements</string>
 
     <!-- Algorithms -->
-    <string name="algorithm_merge_sort">Merge sort</string>
-    <string name="algorithm_binary_search">Ricerca binaria</string>
+    <string name="benchmark_algorithm_merge_sort">Merge sort</string>
+    <string name="benchmark_algorithm_binary_search">Binary search</string>
 
     <!-- Statistics screen -->
-    <string name="statistics_title">Risultati Benchmark</string>
-    <string name="statistics_input_size">Input Size: %d elementi</string>
-    <string name="statistics_iterations">Iterazioni: %d</string>
-    <string name="statistics_speedup_title">Speedup</string>
-    <string name="statistics_run_config_label">
-    Algorithm, input size and runs
-</string>
+    <string name="statistics_title">Benchmark results</string>
+    <string name="statistics_run_config_label">Algorithm, input size, and runs</string>
     <string name="statistics_algorithm">Algorithm: %s</string>
+    <string name="statistics_input_size">Input size: %d elements</string>
+    <string name="statistics_iterations">Runs: %d</string>
 
-
-    <string name="statistics_avg_times_title">Tempi Medi</string>
+    <string name="statistics_speedup_title">Speedup</string>
+    <string name="statistics_avg_times_title">Average times</string>
     <string name="statistics_sdk_average">SDK: %.2f ms</string>
     <string name="statistics_ndk_average">NDK: %.2f ms</string>
-    <string name="statistics_sdk_wins">SDK Vittorie</string>
-    <string name="statistics_ndk_wins">NDK Vittorie</string>
-    <string name="statistics_button_run_again">Esegui Nuovo Benchmark</string>
-    <string name="statistics_button_back_home">Torna alla Home</string>
-    <string name="benchmark_button_view_stats">Visualizza Statistiche</string>
+
+    <string name="statistics_sdk_wins">SDK wins</string>
+    <string name="statistics_ndk_wins">NDK wins</string>
+
+    <string name="statistics_button_run_again">Run another benchmark</string>
+    <string name="statistics_button_back_home">Back to home</string>
 </resources>
