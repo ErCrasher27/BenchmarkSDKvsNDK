@@ -79,6 +79,7 @@ class BenchmarkFragment : Fragment() {
     private fun setupAlgorithmSpinner() {
         val labels = viewModel.algorithms.map {
             when (it) {
+                // BENCHMARK-EXTENSION-POINT
                 BenchmarkAlgorithm.MERGE_SORT -> getString(R.string.benchmark_algorithm_merge_sort)
                 BenchmarkAlgorithm.BINARY_SEARCH -> getString(R.string.benchmark_algorithm_binary_search)
             }

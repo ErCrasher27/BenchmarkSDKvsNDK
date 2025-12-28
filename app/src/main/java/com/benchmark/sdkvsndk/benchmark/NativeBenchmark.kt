@@ -1,5 +1,7 @@
 package com.benchmark.sdkvsndk.benchmark
 
+// BENCHMARK-EXTENSION-POINT
+
 /**
  * Singleton that exposes native (C++) benchmark functions to Kotlin.
  *

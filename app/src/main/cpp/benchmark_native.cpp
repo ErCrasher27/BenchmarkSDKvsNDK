@@ -3,6 +3,8 @@
 #include <algorithm>
 #include <chrono>
 
+// BENCHMARK-EXTENSION-POINT
+
 // JNI entry point for the native merge sort benchmark.
 // external fun mergeSort(data: IntArray): Long
 extern "C" JNIEXPORT jlong JNICALL

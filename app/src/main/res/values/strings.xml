@@ -8,6 +8,7 @@
     <string name="home_swipe_hint">Swipe to read more →</string>
 
     <!-- Teaching cards -->
+    <!-- TEACHING-CARD-EXTENSION-POINT -->
     <string name="teaching_when_not_use_ndk_title">When NOT to use NDK</string>
     <string name="teaching_when_not_use_ndk_content">
         • Small workloads → JNI overhead is 1–5× the actual work.\n
@@ -35,11 +36,13 @@
     </string>
 
     <!-- Input sizes -->
+    <!-- BENCHMARK-EXTENSION-POINT -->
     <string name="benchmark_input_1k">1K elements</string>
     <string name="benchmark_input_10k">10K elements</string>
     <string name="benchmark_input_100k">100K elements</string>
 
     <!-- Algorithms -->
+    <!-- BENCHMARK-EXTENSION-POINT -->
     <string name="benchmark_algorithm_merge_sort">Merge sort</string>
     <string name="benchmark_algorithm_binary_search">Binary search</string>
 

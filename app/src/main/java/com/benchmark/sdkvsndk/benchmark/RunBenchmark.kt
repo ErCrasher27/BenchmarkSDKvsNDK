@@ -5,6 +5,8 @@ import com.benchmark.sdkvsndk.model.InputSize
 import kotlin.random.Random
 import kotlin.system.measureNanoTime
 
+// BENCHMARK-EXTENSION-POINT
+
 /**
  * Runs the merge sort benchmark in a pure Kotlin (SDK) and native (NDK) version.
  *

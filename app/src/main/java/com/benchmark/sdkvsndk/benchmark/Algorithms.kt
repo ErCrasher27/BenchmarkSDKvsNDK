@@ -1,5 +1,7 @@
 package com.benchmark.sdkvsndk.benchmark
 
+// BENCHMARK-EXTENSION-POINT
+
 /**
  * Kotlin implementation of merge sort on an IntArray.
  *

@@ -18,11 +18,13 @@ import kotlinx.coroutines.withContext
 class BenchmarkViewModel : ViewModel() {
 
     private val _algorithms = listOf(
+        // BENCHMARK-EXTENSION-POINT
         BenchmarkAlgorithm.MERGE_SORT, BenchmarkAlgorithm.BINARY_SEARCH
     )
     val algorithms: List<BenchmarkAlgorithm> = _algorithms
 
     private val _inputSizes = listOf(
+        // BENCHMARK-EXTENSION-POINT (optional)
         InputSize(R.string.benchmark_input_1k, 1_000),
         InputSize(R.string.benchmark_input_10k, 10_000),
         InputSize(R.string.benchmark_input_100k, 100_000)
@@ -69,6 +71,7 @@ class BenchmarkViewModel : ViewModel() {
         viewModelScope.launch {
             val result = withContext(Dispatchers.Default) {
                 when (algo) {
+                    // BENCHMARK-EXTENSION-POINT
                     BenchmarkAlgorithm.MERGE_SORT -> runMergeSortBenchmark(size)
                     BenchmarkAlgorithm.BINARY_SEARCH -> runBinarySearchBenchmark(size)
                 }
