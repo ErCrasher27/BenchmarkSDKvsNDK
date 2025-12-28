@@ -11,32 +11,33 @@
             type="com.benchmark.sdkvsndk.viewmodel.BenchmarkViewModel" />
     </data>
 
-    <androidx.constraintlayout.widget.ConstraintLayout style="@style/Benchmark">
+    <androidx.constraintlayout.widget.ConstraintLayout style="@style/Screen">
 
         <TextView
             android:id="@+id/benchmark_title"
-            style="@style/Benchmark.Title"
+            style="@style/Title"
+            android:text="@string/benchmark_title"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <Spinner
             android:id="@+id/algorithm_spinner"
-            style="@style/Benchmark.Spinner"
+            style="@style/Spinner"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/benchmark_title" />
 
         <Spinner
             android:id="@+id/input_size_spinner"
-            style="@style/Benchmark.Spinner"
+            style="@style/Spinner"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/algorithm_spinner" />
 
         <Button
             android:id="@+id/run_benchmark_button"
-            style="@style/Benchmark.PrimaryButton"
+            style="@style/PrimaryButton"
             android:text="@string/benchmark_run_button"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -44,8 +45,7 @@
 
         <Button
             android:id="@+id/view_statistics_button"
-            style="@style/Benchmark.PrimaryButton"
-            android:enabled="false"
+            style="@style/PrimaryButton"
             android:text="@string/benchmark_button_view_stats"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -53,29 +53,31 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/result_card"
-            style="@style/Benchmark.ResultCard"
+            style="@style/Card"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/view_statistics_button">
+            app:layout_constraintStart_toStartOf="parent">
 
-            <LinearLayout style="@style/Benchmark.ResultContainer">
+            <LinearLayout
+                style="@style/LL"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
                 <TextView
-                    style="@style/Benchmark.ResultLabel"
+                    style="@style/ResultLabel"
                     android:text="@string/benchmark_last_run" />
 
                 <TextView
                     android:id="@+id/sdk_time_text"
-                    style="@style/Benchmark.ResultText" />
+                    style="@style/ResultText" />
 
                 <TextView
                     android:id="@+id/ndk_time_text"
-                    style="@style/Benchmark.ResultText" />
+                    style="@style/ResultText" />
 
                 <TextView
                     android:id="@+id/speedup_text"
-                    style="@style/Benchmark.ResultText" />
+                    style="@style/ResultText" />
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>

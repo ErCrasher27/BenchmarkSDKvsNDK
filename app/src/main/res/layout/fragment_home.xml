@@ -2,19 +2,20 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    style="@style/Home"
+    style="@style/Screen"
     tools:context=".fragment.HomeFragment">
 
     <TextView
         android:id="@+id/home_title"
-        style="@style/Home.Title"
+        style="@style/Title"
+        android:text="@string/title_home"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/teachingCardsRecycler"
-        style="@style/Home.Recycler"
+        style="@style/Recycler"
         app:layout_constraintBottom_toTopOf="@id/go_to_benchmark"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,7 +23,7 @@
 
     <Button
         android:id="@+id/go_to_benchmark"
-        style="@style/Home.PrimaryButton"
+        style="@style/PrimaryButton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

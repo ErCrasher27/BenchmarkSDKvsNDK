@@ -28,6 +28,9 @@
     <string name="benchmark_sdk_time">SDK: %1$d ms</string>
     <string name="benchmark_ndk_time">NDK: %1$d ms</string>
     <string name="benchmark_speedup">Speedup SDK/NDK: %1$s×</string>
+    <string name="benchmark_stats_require_runs">
+    To view statistics, run at least 10 benchmarks with the same algorithm and input size.
+</string>
 
     <!-- Input sizes -->
     <string name="input_size_1k">1K elementi</string>

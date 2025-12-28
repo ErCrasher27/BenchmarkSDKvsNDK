@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
@@ -49,6 +50,12 @@ class BenchmarkFragment : Fragment() {
                 val action =
                     BenchmarkFragmentDirections.actionBenchmarkFragmentToStatisticsFragment(results)
                 findNavController().navigate(action)
+            } else {
+                Toast.makeText(
+                    requireContext(),
+                    getString(R.string.benchmark_stats_require_runs),
+                    Toast.LENGTH_SHORT
+                ).show()
             }
         }
     }
@@ -65,7 +72,7 @@ class BenchmarkFragment : Fragment() {
         }
 
         viewModel.canViewStatistics.observe(viewLifecycleOwner) { canView ->
-            binding.viewStatisticsButton.isEnabled = canView
+            // binding.viewStatisticsButton.isEnabled = canView handled by toast and no action by null
         }
     }
 
